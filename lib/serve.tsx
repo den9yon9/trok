@@ -5,7 +5,6 @@ import Hub from "./Hub.ts";
 import { Task, TaskState } from "./type.ts";
 import Builder from "./Builder.ts";
 import Notify from "./Notify.ts";
-import Workspace from "./ui/Workspace.tsx";
 
 export default function serve(port: number) {
   Dispatcher.start();
@@ -15,16 +14,16 @@ export default function serve(port: number) {
   /**
    * @description 首页
    */
-  app.get("/", (ctx) => ctx.html(<Workspace />));
+  app.get("/", (ctx) => ctx.redirect("/static/index.html"));
 
   /**
    * @description 提交任务
    */
   app.post("/", async (ctx) => {
-    const task = await ctx.req.parseBody() as Omit<Omit<Task, "id">, "commits">;
+    const task = await ctx.req.json() as Omit<Task, "id">;
     const id = Math.round(Math.random() * 100000000).toString();
     Dispatcher.register({ ...task, id });
-    return ctx.redirect("/");
+    return ctx.json({ id });
   });
 
   /**

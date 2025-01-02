@@ -1,4 +1,3 @@
-import { h, render } from "https://esm.sh/preact@10.25.3";
 import {
   useState,
   useEffect,
@@ -7,6 +6,7 @@ import {
 import { Fragment } from "https://esm.sh/preact@10.25.3";
 
 import htm from "https://esm.sh/htm@3.1.1";
+import { h } from "https://esm.sh/preact@10.25.3";
 const html = htm.bind(h);
 
 function notifyMe(message) {
@@ -48,7 +48,7 @@ function useMessages() {
   return { messages, invalidate };
 }
 
-function App() {
+export default function Messages() {
   const { messages } = useMessages([]);
   return html`<div class="p-5">
     ${messages.map((item) => {
@@ -71,9 +71,9 @@ function App() {
           html`<${Fragment}>
             <h6>提交记录</h6>
             <ul class="text-xs">
-              ${item.commits.map((commitItem) => {
-                return html`<li>✦ ${commitItem}</li>`;
-              })}
+              ${item.commits.map(
+                (commitItem) => html`<li>✦ ${commitItem}</li>`
+              )}
             </ul>
           </${Fragment}>`}
           <h6 class="mt-2">项目列表</h6>
@@ -112,5 +112,3 @@ ${packageItem.logs}</pre
     })}
   </div>`;
 }
-
-render(html`<${App} />`, document.getElementById("app"));
