@@ -1,4 +1,3 @@
-import { join } from "@std/path/join";
 import { type Config } from "./type.ts";
 import { resolve } from "@std/path/resolve";
 
