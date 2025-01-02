@@ -1,0 +1,17 @@
+{
+  "imports": {
+    "@rawrxd/asta": "jsr:@rawrxd/asta@^0.1.1",
+    "@std/cli": "jsr:@std/cli@^1.0.9",
+    "@std/path": "jsr:@std/path@^1.0.8",
+    "hono": "jsr:@hono/hono@^4.6.15"
+  },
+
+  "fmt": {
+    "lineWidth": 80,
+    "indentWidth": 2
+  },
+  "compilerOptions": {
+    "jsx": "precompile",
+    "jsxImportSource": "hono/jsx"
+  }
+}

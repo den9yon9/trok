@@ -1,0 +1,51 @@
+{
+  "version": "4",
+  "specifiers": {
+    "jsr:@hono/hono@^4.6.15": "4.6.15",
+    "jsr:@rawrxd/asta@~0.1.1": "0.1.1",
+    "jsr:@std/cli@^1.0.9": "1.0.9",
+    "jsr:@std/path@^1.0.6": "1.0.8",
+    "jsr:@std/path@^1.0.8": "1.0.8"
+  },
+  "jsr": {
+    "@hono/hono@4.6.15": {
+      "integrity": "935b3b12e98e4b22bcd1aa4dbe6587321e431c79829eba61f535b4ede39fd8b1"
+    },
+    "@rawrxd/asta@0.1.1": {
+      "integrity": "3cb48253e1ddae3dbc97cb5d849a07feadd5d3185d366375a85bfbd44f77e4ac"
+    },
+    "@std/cli@1.0.9": {
+      "integrity": "557e5865af000efbf3f737dcfea5b8ab86453594f4a9cd8d08c9fa83d8e3f3bc"
+    },
+    "@std/path@1.0.8": {
+      "integrity": "548fa456bb6a04d3c1a1e7477986b6cffbce95102d0bb447c67c4ee70e0364be"
+    }
+  },
+  "redirects": {
+    "https://esm.sh/htm/preact/standalone": "https://esm.sh/htm@3.1.1/preact/standalone",
+    "https://esm.sh/htm/preact/standalone@3.1.1": "https://esm.sh/htm@3.1.1/preact/standalone@3.1.1",
+    "https://esm.sh/htm/preact@3.1.1/standalone": "https://esm.sh/htm@3.1.1/preact@3.1.1/standalone",
+    "https://unpkg.com/vue@3/dist/vue.esm-browser.js": "https://unpkg.com/vue@3.5.13/dist/vue.esm-browser.js"
+  },
+  "remote": {
+    "https://esm.sh/htm@3.1.1": "618fdb44f13eae1da6c01bfee68f97bf0b37d784d12eabacc85e5d306ebd1310",
+    "https://esm.sh/htm@3.1.1/preact/standalone": "80be122ab6efd0ee04536393adbbeba236783f60638c5bf8279139eedd77d78f",
+    "https://esm.sh/stable/@vue/reactivity@3.5.13/denonext/reactivity.mjs": "094f425feb3cdca206f630374869c4be4edd26dfd2e8d9e9d9612296df389eb1",
+    "https://esm.sh/stable/@vue/runtime-core@3.5.13/denonext/runtime-core.mjs": "266ae8f7e8d14789fbba8b03c8aaece61fff0f9b4a680e25745cdd373cce5878",
+    "https://esm.sh/stable/@vue/runtime-dom@3.5.13/denonext/runtime-dom.mjs": "122ed5dd2b0a924222181d0a80ba2bd0937b0f616a7c8fd81f8b0306151724fd",
+    "https://esm.sh/stable/@vue/shared@3.5.13/denonext/shared.mjs": "c03c76f7d383ce457e45d78eaf735d52737f4547490f69a5ed7257826c861bdc",
+    "https://esm.sh/stable/vue@3.5.13/denonext/vue.mjs": "31b982b07e3e781db2f24603d98c31161d04761fbb5e6b60c1e484dfbe4dcc7b",
+    "https://esm.sh/v135/htm@3.1.1/denonext/htm.mjs": "55f083f3845f9c95510d21ce5d3ba24151dc625a23191b76c5ffbf00d14ed29a",
+    "https://esm.sh/v135/htm@3.1.1/denonext/preact/standalone.js": "8969de1ef9d14e187950a30d8702a919915602339387433dd562040ba6aeae1c",
+    "https://esm.sh/vue@3.5.13": "c8522d39693ce6a3e53741b6b0be86100c63ee73fb909486ea7df53c3fd195bd",
+    "https://unpkg.com/vue@3.5.13/dist/vue.esm-browser.js": "549c46190db577538783547d20fff9d0996233969dfa90df9ba6898f5dca9573"
+  },
+  "workspace": {
+    "dependencies": [
+      "jsr:@hono/hono@^4.6.15",
+      "jsr:@rawrxd/asta@~0.1.1",
+      "jsr:@std/cli@^1.0.9",
+      "jsr:@std/path@^1.0.8"
+    ]
+  }
+}
